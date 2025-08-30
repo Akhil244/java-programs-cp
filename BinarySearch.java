@@ -18,9 +18,9 @@ public class BinarySearch {
         // we check the a[mid]=> a[3]=>4==4 true 
         //we return the index
         // => low=0,high=4 if we find the same one as key break => o(1)
-        //=> if the middle one is less than the key => element is present in the low part as the array is sorted asc to desc
-        // => if the middle one is greater than the key then the element is present in the high side right hand side of the array
-        //=> after updating the status of low and high we again calculate the mid then see if we find the key or not if we find then return the index
+        // if we wish to find the key which is present beside mid that means increment the low
+        //=> the element is present to the left hand side of the mid 
+        // we decrement the high and recalculate the mid value then check the conditions defined
         // t c of binary search is O(logn) since it deals with division of array into 2 parts which is more efficient compared to linear search
         // binary search only works on sorted array only it doesnt work on unsorted array since it deals with low and high paramenters 
         // low ones means left hand side of the array and high means right hand side of the array
