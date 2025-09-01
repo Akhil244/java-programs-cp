@@ -26,7 +26,13 @@ public class BinarySearch {
         // low ones means left hand side of the array and high means right hand side of the array
 
         while(low<=high){
-            int mid=(low+high)/2;
+
+            // the formula was actually mid=(l+h)/2 but it results in overflow  
+            // sometimes the values might exceede the datatype limit
+            // in those cases we need to ensure that the value of mid stays at the exact limits or constraints defined
+            // the formula can be revised as:
+            // m=(l+h)/2 => (2l-l+h)/2 => (2l+h-l)/2 => l+(h-l)/2
+            int mid=low+(high-low)/2;  
             if(a[mid]==key){
                 System.out.println(mid);
                 break;
