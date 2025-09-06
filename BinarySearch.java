@@ -28,7 +28,7 @@ public class BinarySearch {
         while(low<=high){
 
             // the formula was actually mid=(l+h)/2 but it results in overflow  
-            // sometimes the values might exceede the datatype limit
+            // sometimes the values might exceede the specified limit
             // in those cases we need to ensure that the value of mid stays at the exact limits or constraints defined
             // the formula can be revised as:
             // m=(l+h)/2 => (2l-l+h)/2 => (2l+h-l)/2 => l+(h-l)/2

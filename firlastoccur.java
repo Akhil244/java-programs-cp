@@ -1,8 +1,8 @@
 import java.util.*;
 public class firlastoccur {
 
-   // we can also use this code for finding the first and last occurences of the particular element in the array
-   // as we know the inclusion principle if oyu want to count the nos btw intervals a and b
+   // we can use this code for finding the first and last occurences of the particular element in the array
+   // as we know the inclusion principle if you want to count the nos btw intervals a and b
    // formula: b-a+1 or (larger-smaller+1)
    // we consider the left values only if the ok is true else we consider the values on the right
     public static int countfirstlastoccur(int arr[],int key,boolean ok){
