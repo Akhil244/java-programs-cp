@@ -21,7 +21,7 @@ public class BinarySearch {
         // if we wish to find the key which is present beside mid that means increment the low
         //=> the element is present to the left hand side of the mid 
         // we decrement the high and recalculate the mid value then check the conditions defined
-        // t c of binary search is O(logn) since it deals with division of array into 2 parts which is more efficient compared to linear search
+        // t c of binary search is O(logn) since it deals with division of array into 2 parts and it does soon till n/2^k times which is more efficient compared to linear search
         // binary search only works on sorted array only it doesnt work on unsorted array since it deals with low and high paramenters 
         // low ones means left hand side of the array and high means right hand side of the array
 
